@@ -1,4 +1,0 @@
-12   1200.00   Andre
-24  800.00  Bruno
-73 -2000.00  Carlos
-58   10  Davi Eduardo
