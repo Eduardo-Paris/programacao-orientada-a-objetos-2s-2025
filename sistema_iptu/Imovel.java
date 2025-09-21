@@ -1,10 +1,18 @@
 package sistema_iptu;
-public class Imovel{
+
+public class Imovel {
     private Municipio municipio;
     private Double areaM2;
     private Integer vagas;
-    public Double CalcularIPTU(){
-        return this.areaM2 * this.municipio.getPrecoM2();
+
+    public Double calcularIPTU(){
+        return (this.areaM2 * this.municipio.getPrecoM2());
+    }
+
+    public Imovel(Municipio municipio, Double areaM2, Integer vagas) {
+        this.municipio = municipio;
+        this.areaM2 = areaM2;
+        this.vagas = vagas;
     }
 
     public Municipio getMunicipio() {
@@ -30,8 +38,5 @@ public class Imovel{
     public void setVagas(Integer vagas) {
         this.vagas = vagas;
     }
-
-
-
 
 }
